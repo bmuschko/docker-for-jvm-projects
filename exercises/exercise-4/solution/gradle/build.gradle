@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.1.2.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.6.RELEASE'
+    id 'com.google.cloud.tools.jib' version '1.0.0'
+}
+
+group = 'com.bmuschko'
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+version = '2.0.0'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    runtime 'com.h2database:h2'
+    runtime 'org.postgresql:postgresql'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jib.to.image = "bmuschko/todo-web-service:${project.version}"
