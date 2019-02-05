@@ -21,9 +21,9 @@ You can run log into the Docker container with the `exec` command:
 
 ```
 $ docker exec -it 1984c2720d19 sh
-/ \# ps -eaf | grep java
+/ # ps -eaf | grep java
 1 root      0:52 java -jar /app/todo-web-service.jar
-/ \# exit
+/ # exit
 ```
 
 Stopping and removing the container can be achieved with the following commands:

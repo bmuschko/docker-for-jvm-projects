@@ -4,7 +4,7 @@
 
 Add the Jib plugin with the version 1.0.0 to the relevant section of the `pom.xml` file.
 
-```
+```xml
 <project>
     <build>
         <pluginManagement>
@@ -59,7 +59,7 @@ $ ./mvnw compile com.google.cloud.tools:jib-maven-plugin:1.0.0:build -Dimage=bmu
 
 The image name can be hard-coded as part of the plugin configuration.
 
-```
+```xml
 <project>
     <build>
         <pluginManagement>
@@ -129,7 +129,7 @@ bmuschko/todo-web-service                  2.0.0               5289ed839f93     
 
 Add the Jib plugin with the version 1.0.0 to the `build.gradle` file.
 
-```
+```groovy
 plugins {
     id 'com.google.cloud.tools.jib' version '1.0.0'
 }
@@ -155,7 +155,7 @@ BUILD SUCCESSFUL in 2s
 
 The image name can be hard-coded as part of the plugin configuration.
 
-```
+```groovy
 jib.to.image = "bmuschko/todo-web-service:${project.version}"
 ```
 
