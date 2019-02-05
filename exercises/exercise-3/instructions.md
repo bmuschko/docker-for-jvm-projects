@@ -1,6 +1,6 @@
 # Exercise 3
 
-In this exercise, you will practice pushing a Docker image to Docker Hub.
+In this exercise, you will practice pushing a Docker image to Docker Hub with the help of the Docker CLI.
 
 ## Pushing a Docker image
 

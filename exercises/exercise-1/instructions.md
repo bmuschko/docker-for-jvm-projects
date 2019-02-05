@@ -1,6 +1,6 @@
 # Exercise 1
 
-In this exercise, you will practice writing a Dockerfile and building a Docker image.
+In this exercise, you will practice writing a Dockerfile and building a Docker image from the Docker CLI.
 
 ## Writing a Dockerfile
 

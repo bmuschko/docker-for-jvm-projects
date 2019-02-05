@@ -1,6 +1,6 @@
 # Exercise 2
 
-In this exercise, you will practice running a Docker image.
+In this exercise, you will practice running a Docker image from the Docker CLI.
 
 ## Running a Docker image
 

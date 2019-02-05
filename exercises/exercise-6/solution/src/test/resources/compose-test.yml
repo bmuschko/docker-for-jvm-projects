@@ -1,0 +1,6 @@
+database:
+  image: "postgres:9.6.10-alpine"
+  environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+    - POSTGRES_DB=todo

@@ -1,6 +1,6 @@
 # Exercise 4
 
-In this exercise, you will learn how to use [Google Jib](https://github.com/GoogleContainerTools/jib) to implement a typical developer workflow.
+In this exercise, you will learn how to use [Google Jib](https://github.com/GoogleContainerTools/jib) to implement a typical developer workflow. The workflow builds an image for your application and pushes it to Docker Hub for later consumption. You will see that little code is required to implement the use case. There's no more need to invoke the Docker CLI manually for each of the steps.
 
 ## Building and pushing an image with Jib
 
