@@ -11,3 +11,4 @@ You can decide to use Maven or Gradle for this exercise. Pick the tool you are m
 3. Configure the build script to hard-code the image name so that you don't have to provide the name as command line parameter anymore. Build the image again.
 4. Build and push the image with the goal/task that uses the Docker daemon.
 5. Verify that the image has been created by the `docker container ls` command.
+6. (Optional) Install [dive](https://github.com/wagoodman/dive), a tool for exploring a docker image and layer contents. Inspect the layers of the built image.
