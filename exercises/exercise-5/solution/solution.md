@@ -4,7 +4,7 @@
 
 ### Maven
 
-```
+```xml
 <project>
     <dependencies>
         <dependency>
@@ -37,7 +37,7 @@
 
 ### Gradle
 
-```
+```groovy
 dependencies {
     def junitJupiterVersion = '5.3.2'
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
@@ -53,7 +53,7 @@ dependencies {
 
 It's very easy to create a new instance of `PostgreSQLContainer`. Simply instantiate the class and optionally provide a specific image. The class implements the builder pattern to provide username, password and database name.
 
-```
+```java
 private static PostgreSQLContainer createDbContainer() {
     return new PostgreSQLContainer("postgres:9.6.10-alpine")
             .withUsername("postgres")
@@ -64,7 +64,7 @@ private static PostgreSQLContainer createDbContainer() {
 
 The container instance exposes methods to access runtime information like JDBC URL, username and password.
 
-```
+```java
 static class Initializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
     @Override
     public void initialize(ConfigurableApplicationContext configurableApplicationContext) {

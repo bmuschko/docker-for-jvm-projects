@@ -7,8 +7,7 @@ In this exercise, you will learn how to use [Google Jib](https://github.com/Goog
 You can decide to use Maven or Gradle for this exercise. Pick the tool you are most comfortable with.
 
 1. Add the Jib plugin to the build script. See the [quick start guide](https://github.com/GoogleContainerTools/jib#quickstart) for more information.
-2. Build the image by invoking the respective goal/task provided by the plugin. Provide the image name as command line parameter.
-3. Verify that the image has been created by the `docker container ls` command.
-4. Configure the build script to hard-code the image name so that you don't have to provide the name as command line parameter anymore. Build the image again.
-5. Build the image with the goal/task that uses the Docker daemon. Find the generated `Dockerfile` and inspect it.
-6. Push the image to Docker Hub with the appropriate goal/task.
+2. Build and push the image to Docker Hub by invoking the respective goal/task provided by the plugin. Declare the image name as command line parameter. Use the version 2.0.0.
+3. Configure the build script to hard-code the image name so that you don't have to provide the name as command line parameter anymore. Build the image again.
+4. Build and push the image with the goal/task that uses the Docker daemon.
+5. Verify that the image has been created by the `docker container ls` command.
