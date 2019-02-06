@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('Compile') {
+            steps {
+                sh './gradlw clean compile'
+            }
+        }
+        stage('Build And Push Image') {
+            steps {
+                sh './gradlew dockerBuild'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh './gradlew test'
+            }
+            post {
+                always {
+                    junit '**/build/test-results/test/TEST-*.xml'
+                }
+            }
+        }
+    }
+}

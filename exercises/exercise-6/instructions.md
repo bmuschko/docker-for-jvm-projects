@@ -9,7 +9,7 @@ In this exercise, you will learn how to use [TestContainers](https://www.testcon
 
 ## Test setup
 
-1. Copy the Java file `DockerComposeIntegrationTest.java` from the `start` directory into the project under the directory `src/test/java/com/bmuschko/todo/webservice/repository`. The file contains comments, you'll fill in with actual code as part of this exercise.
+1. Copy the Java file `DockerComposeIntegrationTest.java` from the `start` directory into the project under the directory `src/test/java/com/bmuschko/todo/webservice/repository`. The file contains `TODO` comments, you'll fill in with actual code as part of this exercise.
 2. Execute the compilation goal/task for the test sources. For Maven the command is `./mvnw test-compile`, for Gradle the command is `./gradlew testClasses`. Try to identify the missing or incorrect if you are experiencing a compilation error.
 
 ## Implementing and executing the test
