@@ -10,4 +10,4 @@ All exercises are based on a sample Java project. Please make sure to follow the
 
 ## Exercises
 
-All exercises are numbered and live in dedicated directories starting with the name `exercise-`. You'll find instructions for each exercise in each folder. Solutions are available in the `solution` folder. Try to solve each exercise yourself before having a look at the solution.
+All [exercises](./exercises) are numbered and live in dedicated directories starting with the name `exercise-`. You'll find instructions for each exercise in each folder. Solutions are available in the `solution` folder. Try to solve each exercise yourself before having a look at the solution.
