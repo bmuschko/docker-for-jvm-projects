@@ -36,4 +36,3 @@ In this step, you will enhance the existing pipeline definition.
 4. Commit and push the `Jenkinsfile` to your repository.
 5. Trigger a new build in Jenkins.
 6. Inspect the pipeline view. Do you see the new stages?
-7. (Optional) Configure the pipeline to use Docker agents. Use the image `openjdk:jre-alpine`. See the [Jenkins documentation on agents](https://jenkins.io/doc/book/pipeline/syntax/#agent) for configuration options.
