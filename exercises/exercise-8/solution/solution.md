@@ -4,7 +4,7 @@
 
 Apply the fabric8io/docker-maven-plugin in the plugins section of the POM.
 
-```
+```xml
 <project>
     <build>
         <pluginManagement>
@@ -22,7 +22,7 @@ Apply the fabric8io/docker-maven-plugin in the plugins section of the POM.
 
 Provide build and run configuration for the plugin. Use the built artifact of the project as input for building the image.
 
-```
+```xml
 <configuration>
     <images>
         <image>
@@ -103,7 +103,7 @@ You can run the the container by executing the command `./mvnw package spring-bo
 
 First, apply the [Spring Boot application plugin](https://bmuschko.github.io/gradle-docker-plugin/#spring_boot_application_plugin). The plugin already provides basic conventions (e.g. the base image).
 
-```
+```groovy
 plugins {
     id 'com.bmuschko.docker-spring-boot-application' version '4.4.1'
 }
@@ -111,7 +111,7 @@ plugins {
 
 Next, add two tasks with [custom types provided by the plugin](https://bmuschko.github.io/gradle-docker-plugin/#custom_task_types): one for creating the container, one for running the container. The task `dockerBuildImage` already exists as it has been created by the Spring Boot application plugin.
 
-```
+```groovy
 import com.bmuschko.gradle.docker.tasks.container.DockerCreateContainer
 import com.bmuschko.gradle.docker.tasks.container.DockerStartContainer
 
