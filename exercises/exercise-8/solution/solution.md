@@ -48,7 +48,7 @@ Provide build and run configuration for the plugin. Use the built artifact of th
 You can run the the container by executing the command `./mvnw package spring-boot:repackage docker:build docker:run`. Ensure to also include the goal `spring-boot:repackage` so that the Spring Boot plugin can add the main class name.
 
 ```
-./mvnw package spring-boot:repackage docker:build docker:run
+$ ./mvnw package spring-boot:repackage docker:build docker:run
 [INFO] Scanning for projects...
 [WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
 [WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
@@ -130,7 +130,7 @@ task runContainer(type: DockerStartContainer) {
 You can run the the container by executing the task of type `DockerStartContainer`. You will not see the attached console output from the container.
 
 ```
-./gradlew runContainer --console=verbose
+$ ./gradlew runContainer --console=verbose
 > Task :compileJava
 > Task :processResources UP-TO-DATE
 > Task :classes
