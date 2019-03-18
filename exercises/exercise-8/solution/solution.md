@@ -105,7 +105,7 @@ First, apply the [Spring Boot application plugin](https://bmuschko.github.io/gra
 
 ```groovy
 plugins {
-    id 'com.bmuschko.docker-spring-boot-application' version '4.4.1'
+    id 'com.bmuschko.docker-spring-boot-application' version '4.6.2'
 }
 ```
 
