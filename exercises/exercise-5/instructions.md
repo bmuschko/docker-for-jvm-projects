@@ -7,7 +7,7 @@ In this exercise, you will learn how to use [TestContainers](https://www.testcon
 You can decide to use Maven or Gradle for this exercise. Pick the tool you are most comfortable with.
 
 1. Copy the Java file `ToDoRepositoryIntegrationTest.java` from the `start` directory into the project under the directory `src/test/java/com/bmuschko/todo/webservice/repository`. The file contains `TODO` comments, you'll fill in with actual code as part of this exercise.
-2. Configure the build script to add the relevant JUnit 5 and TestContainer dependencies. Use the version 5.3.2 for JUnit, use version 1.10.2 for TestContainers.
+2. Configure the build script to add the relevant JUnit 5 and TestContainer dependencies. Use the version 5.3.2 for JUnit, use version 1.10.7 for TestContainers.
 3. Execute the compilation goal/task for the test sources. For Maven the command is `./mvnw test-compile`, for Gradle the command is `./gradlew testClasses`. Try to identify the missing or incorrect if you are experiencing a compilation error.
 
 ## Implementing and executing the test

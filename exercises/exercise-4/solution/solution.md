@@ -80,7 +80,7 @@ The image name can be hard-coded as part of the plugin configuration.
 </project>
 ```
 
-You can build and push the image with the Docker daemon by using the goal `com.google.cloud.tools:jib-maven-plugin:1.0.0:dockerBuild`.
+You can build and push the image with the Docker daemon by using the goal `com.google.cloud.tools:jib-maven-plugin:1.0.2:dockerBuild`.
 
 ```
 $ ./mvnw compile com.google.cloud.tools:jib-maven-plugin:1.0.2:dockerBuild
@@ -162,7 +162,7 @@ jib.to.image = "bmuschko/todo-web-service:${project.version}"
 You can build and push the image with the Docker daemon by using the task `jibDockerBuild`.
 
 ```
-./gradlew jibDockerBuild
+$ ./gradlew jibDockerBuild
 
 Containerizing application to Docker daemon as bmuschko/todo-web-service:2.0.0...
 Base image 'gcr.io/distroless/java' does not use a specific image digest - build may not be reproducible

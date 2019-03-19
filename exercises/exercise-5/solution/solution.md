@@ -10,13 +10,13 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.4.1</version>
+            <version>5.3.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.4.1</version>
+            <version>5.3.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -39,7 +39,7 @@
 
 ```groovy
 dependencies {
-    def junitJupiterVersion = '5.4.1'
+    def junitJupiterVersion = '5.3.2'
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion"
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
