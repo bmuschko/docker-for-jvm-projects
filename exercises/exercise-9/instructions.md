@@ -17,7 +17,7 @@ In this step, you'll create and implement the `Jenkinsfile` to represent your bu
 
 With the `Jenkinsfile` in place, we'll want to create a pipeline job in Jenkins.
 
-1. Start Jenkins with `java -jar jenkins.war`. Please refer to the Jenkins documentation to learn about the [startup procedure](https://wiki.jenkins.io/display/JENKINS/Starting+and+Accessing+Jenkins) for your operating system. The default URL points to `http://localhost:8080/`.
+1. Start Jenkins with `java -jar jenkins.war --httpPort=<port>`. You will want to use a different one than 8080 as it might conflict with the port we set for integration testing. Please refer to the Jenkins documentation to learn about the [startup procedure](https://wiki.jenkins.io/display/JENKINS/Starting+and+Accessing+Jenkins) for your operating system. The default URL points to `http://localhost:<port>/`.
 2. Verify that the pipeline plugin has been installed under _Manage Jenkins > Manage Plugins > Installed > Search for "Pipeline"_. Install the plugin if it hasn't been installed.
 3. Create a new Jenkins job via _New Item > Pipeline_. Enter a name and press the _OK_ button.
 4. In the section _Pipeline_, _select Pipeline from SCM_. Select your forked repository HTTPS URL under _SCM > Git_.
