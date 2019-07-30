@@ -2,7 +2,7 @@
 
 ## Maven
 
-Add the Jib plugin with the version 1.0.2 to the relevant section of the `pom.xml` file.
+Add the Jib plugin with the version 1.4.0 to the relevant section of the `pom.xml` file.
 
 ```xml
 <project>
@@ -12,7 +12,7 @@ Add the Jib plugin with the version 1.0.2 to the relevant section of the `pom.xm
                 <plugin>
                     <groupId>com.google.cloud.tools</groupId>
                     <artifactId>jib-maven-plugin</artifactId>
-                    <version>1.0.2</version>
+                    <version>1.4.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -23,7 +23,7 @@ Add the Jib plugin with the version 1.0.2 to the relevant section of the `pom.xm
 Now that the Jib plugin has been applied, you can build and push an image without the use of the Docker daemon. The goal will not create a `Dockerfile` nor does it build a Docker image.
 
 ```
-$ ./mvnw compile com.google.cloud.tools:jib-maven-plugin:1.0.2:build -Dimage=bmuschko/todo-web-service:2.0.0
+$ ./mvnw compile com.google.cloud.tools:jib-maven-plugin:1.4.0:build -Dimage=bmuschko/todo-web-service:2.0.0
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ---------------< com.bmuschko:todo-web-service-exercise >---------------
@@ -67,7 +67,7 @@ The image name can be hard-coded as part of the plugin configuration.
                 <plugin>
                     <groupId>com.google.cloud.tools</groupId>
                     <artifactId>jib-maven-plugin</artifactId>
-                    <version>1.0.2</version>
+                    <version>1.4.0</version>
                     <configuration>
                         <to>
                             <image>bmuschko/todo-web-service:${project.version}</image>
@@ -80,10 +80,10 @@ The image name can be hard-coded as part of the plugin configuration.
 </project>
 ```
 
-You can build and push the image with the Docker daemon by using the goal `com.google.cloud.tools:jib-maven-plugin:1.0.2:dockerBuild`.
+You can build and push the image with the Docker daemon by using the goal `com.google.cloud.tools:jib-maven-plugin:1.4.0:dockerBuild`.
 
 ```
-$ ./mvnw compile com.google.cloud.tools:jib-maven-plugin:1.0.2:dockerBuild
+$ ./mvnw compile com.google.cloud.tools:jib-maven-plugin:1.4.0:dockerBuild
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ---------------< com.bmuschko:todo-web-service-exercise >---------------
@@ -127,11 +127,11 @@ bmuschko/todo-web-service                  2.0.0               5289ed839f93     
 
 ## Gradle
 
-Add the Jib plugin with the version 1.0.2 to the `build.gradle` file.
+Add the Jib plugin with the version 1.4.0 to the `build.gradle` file.
 
 ```groovy
 plugins {
-    id 'com.google.cloud.tools.jib' version '1.0.2'
+    id 'com.google.cloud.tools.jib' version '1.4.0'
 }
 ```
 
