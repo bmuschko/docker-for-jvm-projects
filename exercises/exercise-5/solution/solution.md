@@ -22,13 +22,13 @@
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>1.10.7</version>
+            <version>1.12.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>postgresql</artifactId>
-            <version>1.10.7</version>
+            <version>1.12.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -43,7 +43,7 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion"
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    def testcontainersVersion = '1.10.7'
+    def testcontainersVersion = '1.12.0'
     testImplementation "org.testcontainers:junit-jupiter:$testcontainersVersion"
     testImplementation "org.testcontainers:postgresql:$testcontainersVersion"
 }
