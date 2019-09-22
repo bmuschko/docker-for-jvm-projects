@@ -105,7 +105,7 @@ First, apply the [Spring Boot application plugin](https://bmuschko.github.io/gra
 
 ```groovy
 plugins {
-    id 'com.bmuschko.docker-spring-boot-application' version '4.6.2'
+    id 'com.bmuschko.docker-spring-boot-application' version '5.1.0'
 }
 ```
 
@@ -136,7 +136,6 @@ $ ./gradlew runContainer --console=verbose
 > Task :classes
 > Task :dockerSyncBuildContext
 > Task :dockerCreateDockerfile
-
 > Task :dockerBuildImage
 Building image using context '/Users/bmuschko/dev/projects/todo-web-service-exercise/build/docker'.
 Using tags 'com.bmuschko/todo-web-service-exercise:1.0.0' for image.
